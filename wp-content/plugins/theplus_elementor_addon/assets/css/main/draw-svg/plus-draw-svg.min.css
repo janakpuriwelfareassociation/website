@@ -1,0 +1,27 @@
+.pt_plus_animated_svg .svg_inner_block {
+    position: relative;
+    display: inline-flex;
+}
+
+.pt_plus_animated_svg object {
+    max-width: 100%;
+    width: 100%;
+}
+
+.pt_plus_animated_svg object,.pt_plus_row_bg_animated_svg object,.ts-hover-draw-svg object{
+	opacity:0;
+}
+
+.pt_plus_row_bg_animated_svg .svg_inner_block {
+    position: absolute;
+}
+
+.pt_plus_animated_svg object {
+    min-height: 100%;
+}
+
+.svg_inner_block .embed-responsive,.svg_inner_block .embed-responsive .embed-responsive-item,.svg_inner_block .embed-responsive iframe,.svg_inner_block .embed-responsive embed,.svg_inner_block .embed-responsive object,.svg_inner_block .embed-responsive video{
+    position: relative;
+    padding: 0px;
+    height: auto;
+}

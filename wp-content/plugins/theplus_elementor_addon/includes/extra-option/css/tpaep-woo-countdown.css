@@ -1,0 +1,58 @@
+#woocommerce_countdown .tpaep_woo_countdown_main{
+    display: flex;
+    padding: 10px 5px;
+    flex-direction: column;
+}
+.tpaep_woo_countdown_main .tpaep_countdown_type{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 7px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.tpaep_woo_countdown_main .tpaep_countdown_type.tpaep_fakenumbers_countdown_wrap{
+    flex-direction: column;
+}
+.tpaep_countdown_type.tpaep_fakenumbers_countdown_wrap > .title{
+    padding: 15px 0px;
+}
+.tpaep_woo_countdown_main .tpaep_countdown_type > .title{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.tpaep_woo_countdown_main .tpaep_countdown_type > .tpaep_countdown_right{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.tpaep_woo_countdown_main .tpaep_countdown_right > label{
+    width: 20%;
+}
+.tpaep_woo_countdown_main .tpaep_countdown_right > label,
+.tpaep_countdown_content .tpaep_fakenumbers_content > label{
+    font-size: 13px;
+    font-weight: 500;
+}
+.tpaep_woo_countdown_main .tpaep_countdown_type > .tpaep_countdown_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tpaep_countdown_type .tpaep_countdown_content > .tpaep_fakenumbers_content {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 0px;
+}
+.tpaep_countdown_content .tpaep_fakenumbers_content > input{ 
+    margin-right: 20px;
+}

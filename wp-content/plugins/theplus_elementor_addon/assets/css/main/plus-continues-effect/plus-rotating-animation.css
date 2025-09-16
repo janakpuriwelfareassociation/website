@@ -1,0 +1,61 @@
+.rotate-continue {
+    -webkit-animation-name: rotating;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotating;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.image-rotating,
+.hover_rotating:hover {
+    animation-name: continue-rotating;
+    -webkit-animation-name: rotating;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    animation-duration: 8s;
+    -webkit-animation-duration: 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes continue-rotating {
+    from {
+        -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+        -moz-transform: rotate(0deg) translate(-10px) rotate(0deg);
+        -ms-transform: rotate(0deg) translate(-10px) rotate(0deg);
+        -o-transform: rotate(0deg) translate(-10px) rotate(0deg);
+        transform: rotate(0deg) translate(-10px) rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+        -moz-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+        -o-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+        transform: rotate(360deg) translate(-10px) rotate(-360deg)
+    }
+}

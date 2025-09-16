@@ -1,0 +1,72 @@
+.pt-plus-filter-post-category .post-filter-data {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.pt-plus-filter-post-category .category-filters {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+.pt-plus-filter-post-category .category-filters li {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.75em;
+}
+
+.pt-plus-filter-post-category .category-filters li a {
+  font-size: 12px;
+  line-height: 19px;
+  padding: 3px 0;
+  color: #313131;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.pt-plus-filter-post-category .category-filters a span {
+  display: block;
+  text-align: center;
+}
+
+.pt-plus-filter-post-category
+  .post-filter-data.text-left
+  .category-filters
+  li:first-child {
+  margin-left: 0px !important;
+}
+
+.pt-plus-filter-post-category
+  .post-filter-data.text-right
+  .category-filters
+  li:first-child {
+  margin-right: 0px !important;
+}
+
+ul.category-filters.style-4.hover-style-3 li {
+  margin: 0;
+}
+
+ul.category-filters.style-4.hover-style-3 a span {
+  display: inline-block;
+}
+
+ul.category-filters.style-1.hover-style-3 li {
+  margin: 0;
+}
+
+ul.category-filters.style-1.hover-style-3 a span {
+  display: inline-block;
+}
+
+ul.category-filters.style-1.hover-style-3 .all_post_count {
+  right: -8px !important;
+}

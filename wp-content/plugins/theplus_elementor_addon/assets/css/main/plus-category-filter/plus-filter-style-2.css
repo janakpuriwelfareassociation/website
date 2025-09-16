@@ -1,0 +1,11 @@
+.pt-plus-filter-post-category .category-filters.style-2 span.all_post_count {
+    font-weight: 300;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-transform: none;
+    display: block;
+    text-transform: capitalize;
+    text-align: center
+}

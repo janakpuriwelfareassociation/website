@@ -1,0 +1,21 @@
+.pt_plus_adv_button.ab-cta.tp_cta_st_14 .adv-button-link-wrap {
+    padding: 0;
+    margin: 0;
+    border: unset
+}
+
+.pt_plus_adv_button.ab-cta.tp_cta_st_14 .liquid-button {
+    margin: auto
+}
+
+.pt_plus_adv_button.ab-cta.tp_cta_st_14 .liquid-button path {
+    cursor: pointer
+}
+
+.pt_plus_adv_button.ab-cta.tp_cta_st_14.st14_left .adv-button-link-wrap {
+    left: -40px
+}
+
+.pt_plus_adv_button.ab-cta.tp_cta_st_14.st14_right .adv-button-link-wrap {
+    right: -40px
+}

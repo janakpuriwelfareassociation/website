@@ -1,0 +1,24 @@
+.continue-scale {
+    -webkit-animation-name: kenburns;
+    animation-name: kenburns;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@keyframes kenburns {
+    0% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}

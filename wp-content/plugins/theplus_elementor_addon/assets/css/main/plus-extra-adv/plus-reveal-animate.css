@@ -1,0 +1,56 @@
+/*reveal animate*/
+.pt-plus-reveal.animated{
+    display: block;
+    position: relative;
+}
+
+.heading-title.pt-plus-reveal {
+    display: inline-block;
+}
+
+.pt-plus-reveal.animated::before{
+    content: '';
+    background: #313131;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: 0% 0% 0px;
+    animation: pt-plus-reveal 2s 800ms cubic-bezier(0, 0, 0.2, 1) both;
+    -webkit-animation: pt-plus-reveal 2s 800ms cubic-bezier(0, 0, 0.2, 1) both;
+    z-index: 11;
+}
+
+.pt-plus-reveal.animated::after{
+    content: '';
+    background: #ff214f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: 0% 0% 0px;
+    animation: pt-plus-reveal 2s 400ms cubic-bezier(0, 0, 0.2, 1) both;
+    -webkit-animation: pt-plus-reveal 2s 400ms cubic-bezier(0, 0, 0.2, 1) both;
+    z-index: 1;
+}
+
+@keyframes pt-plus-reveal {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: 0% 0% 0px;
+    }
+    51% {
+        transform-origin: 100% 50% 0px;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: 100% 50% 0px;
+    }
+}

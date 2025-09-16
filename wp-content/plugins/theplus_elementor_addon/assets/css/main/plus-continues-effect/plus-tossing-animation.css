@@ -1,0 +1,39 @@
+.image-tossing,
+.hover_tossing {
+    display: inline-block;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+}
+
+.tossing {
+    animation-duration: 2.2s;
+    animation-name: content_effect_tossing;
+    -webkit-animation-name: content_effect_tossing;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 2.2s;
+    -webkit-animation-iteration-count: infinite
+}
+
+.image-tossing,
+.hover_tossing:hover {
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-name: content_effect_tossing;
+    -webkit-animation-name: content_effect_tossing;
+    -webkit-animation-duration: 2.2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes content_effect_tossing {
+    0% {
+        transform: rotate(-1deg)
+    }
+
+    50% {
+        transform: rotate(1deg)
+    }
+
+    100% {
+        transform: rotate(-1deg)
+    }
+}

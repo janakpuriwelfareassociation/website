@@ -1,0 +1,39 @@
+.image-drop_waves:after,
+.hover_drop_waves:after {
+    content: '';
+    background: #ff214f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.image-drop_waves:after,
+.hover_drop_waves:hover:after {
+    -webkit-animation-name: content-icon-float-away;
+    animation-name: content-icon-float-away;
+}
+
+@keyframes content-icon-float-away {
+    0% {
+        opacity: .8
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4)
+    }
+}
+

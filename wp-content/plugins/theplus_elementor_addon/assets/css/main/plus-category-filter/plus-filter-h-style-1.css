@@ -1,0 +1,42 @@
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a span:not(.all_post_count) {
+	margin-bottom: 2px;
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #313131;
+	content: "";
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	-o-transition: opacity 0.3s, -o-transform 0.3s;
+	-ms-transition: opacity 0.3s, -ms-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	-o-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+/* check this px */
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a:hover::after,
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a:focus::after,
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a.active::after {
+	opacity: 0.6;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a:hover::after,
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a:focus::after,
+.pt-plus-filter-post-category .category-filters.hover-style-1 li a.active::after {
+	display: block !important;
+}

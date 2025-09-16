@@ -1,0 +1,40 @@
+.image-floating,
+.hover_floating {
+    display: inline-block;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+}
+
+.floating {
+    animation-name: content_effect_floating;
+    -webkit-animation-name: content_effect_floating;
+    animation-duration: 2.2s;
+    -webkit-animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite
+}
+
+.image-floating,
+.hover_floating:hover {
+    animation-name: content_effect_floating;
+    -webkit-animation-name: content_effect_floating;
+    animation-duration: 2.2s;
+    -webkit-animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes content_effect_floating {
+    0% {
+        transform: translateY(0%)
+    }
+
+    50% {
+        transform: translateY(2%)
+    }
+
+    100% {
+        transform: translateY(0%)
+    }
+}
+

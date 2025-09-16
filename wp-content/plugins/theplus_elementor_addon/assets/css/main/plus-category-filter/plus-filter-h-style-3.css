@@ -1,0 +1,56 @@
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a {
+	padding: 3px 5px;
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:before,
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	-ms-transition: -ms-transform 0.3s, opacity 0.2s;
+	-o-transition: -o-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:before {
+	margin-right: 7px;
+	content: "[";
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	-o-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:after {
+	margin-left: 7px;
+	content: "]";
+	-webkit-transform: translateX(-20px);
+	-ms-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	-o-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:hover:after,
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:focus:after,
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a.active:after,
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:hover:before,
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a:focus:before,
+.pt-plus-filter-post-category .category-filters.hover-style-3 li a.active:before {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+ul.category-filters.style-3.hover-style-3 li a span {
+	display: inline-block;
+}
+
+ul.category-filters.style-3.hover-style-3 li {
+	margin: 0;
+}

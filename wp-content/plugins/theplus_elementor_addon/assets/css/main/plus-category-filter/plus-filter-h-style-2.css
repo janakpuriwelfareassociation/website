@@ -1,0 +1,69 @@
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a {
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a span:not(.all_post_count) {
+	position: relative;
+	display: grid;
+	align-items: center;
+	text-align: center;
+	padding: 5px 12px;
+	background: #2195de;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-o-transition: -o-transform 0.3s;
+	-ms-transition: -ms-transform 0.3s;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a:hover span:not(.all_post_count),
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a:focus span:not(.all_post_count),
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a.active span:not(.all_post_count) {
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	-moz-transform: rotateX(90deg) translateY(-22px);
+	-ms-transform: rotateX(90deg) translateY(-22px);
+	-o-transform: rotateX(90deg) translateY(-22px);
+	transform: rotateX(90deg) translateY(-22px);
+}
+
+/* */
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a span:not(.all_post_count)::before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	align-items: center;
+	background: #0965a0;
+	content: attr(data-hover);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition: background 0.3s;
+	-ms-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a:hover span:not(.all_post_count):before,
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a:focus span:not(.all_post_count):before,
+.pt-plus-filter-post-category .category-filters.hover-style-2 li a.active span:not(.all_post_count):before {
+	background: #28a2ee;
+}
